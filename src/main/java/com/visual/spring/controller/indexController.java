@@ -15,6 +15,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class indexController {
     
+    @RequestMapping("/")
+    public String sayLoad(){
+        return ("Hello, loading");
+    }      
+    
     @RequestMapping("hello")
     public String sayHello(){
         return ("Hello, SpringBoot on Wildfly");
