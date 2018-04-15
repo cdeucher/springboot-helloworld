@@ -6,7 +6,6 @@
 package com.visual.spring.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -16,8 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class indexController {
     
-   @RequestMapping(value="/", method=RequestMethod.GET) 
-   public String getTexto(){
-       return "Olá Pessoal";
-   }
+    @RequestMapping("hello")
+    public String sayHello(){
+        return ("Hello, SpringBoot on Wildfly");
+    }   
 } 
