@@ -7,14 +7,9 @@ package com.visual.spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.support.SpringBootServletInitializer;
 
-/**
- *
- * @author ryan
- */
 @SpringBootApplication
-public class Aplicacao extends SpringBootServletInitializer {    
+public class Aplicacao{    
     public static void main (String[] args) throws Exception{
         SpringApplication.run(Aplicacao.class, args);
     }   
