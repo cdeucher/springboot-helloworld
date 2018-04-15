@@ -20,6 +20,11 @@ public class indexController {
         return ("Hello, loading");
     }      
     
+    @RequestMapping("/param")
+    public String sayParam(){
+        return ("Hello, param");
+    }       
+    
     @RequestMapping("hello")
     public String sayHello(){
         return ("Hello, SpringBoot on Wildfly");
