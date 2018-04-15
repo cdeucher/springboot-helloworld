@@ -6,17 +6,25 @@
 package com.visual.spring;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 /**
  *
  * @author ryan
  */
+@Configuration
+@ComponentScan
+@EnableAutoConfiguration
 @SpringBootApplication
-public class Aplicacao {
+public class Aplicacao{
      
     
     public static void main (String[] args) throws Exception{
-         SpringApplication.run(Aplicacao.class, args);
+        SpringApplication.run(Aplicacao.class, args);
     }
+    
+
 }
